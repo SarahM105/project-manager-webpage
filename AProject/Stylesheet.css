@@ -1,0 +1,206 @@
+/* header description:
+      - text should be centered 
+      - there should be appropriate spacing around the text 
+      - h1 should be in this colour #9f9d9d and using the google font style "Archivo Black"
+      - h5 should be placed directly under it in the color #ad9d9d and should use the google font style "Monsieur La Doulaise"
+      - h1 and h5 should be sized accordingly  */
+header {
+margin: 5% ;
+text-align: center;
+display: flex; 
+flex-direction: column; 
+align-items: center; 
+color: #9f9d9d;
+
+}
+
+    /*nav bar description:
+          - the background colour should be  #e5e3e3
+          - the text colour should be #ad9d9d
+          - the options for the nav bar should be centered
+          - the border should be 1px solid line and its colour should be #ad9d9d
+          - when the mouse hovers over the border the background colour should be #d4c9c9
+          - letter spacing of the options within the nav bar should be 5px */
+          nav {
+            background-color: #e5e3e3;
+            color: #ad9d9d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+            border: 1px solid #ad9d9d; /* Add border style */
+            margin-bottom: 0;
+        }
+        
+        nav li:hover {
+            background-color: #d4c9c9;
+        }
+        
+        nav a {
+            color: #ad9d9d;
+            text-decoration: none;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav li {
+            margin-left: 0px;
+        }
+
+
+
+/*h1 tag description:
+          -text should always be centered 
+          -the font should be "Allison"
+          - ajust the size and margins accordingly*/
+h1 {
+font-family: "Archivo Black";
+color: #9f9d9d;
+font-size: 300%;
+letter-spacing: 20px;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+
+/*h2 tag description:
+    -text should always be centered 
+    -the font should be "Allison"
+    - ajust the size and margins accordingly*/
+    h2 {
+        text-align: center;
+        font-family: "Allison";
+        font-size: 500%;
+        margin-top: 0;
+        margin-bottom: 1%;
+        color: #ad9d9d;
+    }
+
+h4{
+    font-family: "Archivo Black";
+    color: #ad9d9d;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    font-family: "Monsieur La Doulaise";
+    font-size: 220%;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ad9d9d;
+}
+     
+/* this box must be:
+    - in the center if the page 
+    - width should not take up the maximum room
+    - its height should be able to be adjusted when needed
+    - keep a fixed width value 
+    - there should be a gap between each element
+    - input boxes should be round edged rectangles and take up the full width 
+    - background colour should be slightly tinted
+    - make the anchor link have a unique colour   */
+.auth-box, .project-box, .container, .update_box ,.logout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color:  #e5e3e3;
+    color: #320e0e;
+}
+
+.logout{
+    background-color: #edebeb;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.project-box , .update_box{
+    width: 400px;
+}
+
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-box input[type="email"],
+.auth-box input[type="text"],
+.auth-box input[type="password"],
+.project-box input[type="text"],
+.project-box input[type="date"],
+.container input[type = "text"],
+.container input[type = "date"],
+.form-group textarea,
+.form-group select,
+.update_box input[type = "text"],
+.update_box input[type = "date"],
+.update_box select,
+.update_box textarea
+{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; 
+}
+
+
+
+
+.auth-box input[type="submit"],
+.project-box input[type="submit"],
+.update-button,
+.container input[type="submit"],
+.update_box input[type="submit"]  {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #9c7d7d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.update-button {
+    margin-left: 10px;
+}
+
+.auth-box a,
+.project-box a {
+    margin-top: 10px; 
+    color: #8d6a5e;
+}
+
+.project-details {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#projects-list li {
+    margin: 10px 0; /* Add margin between list items */
+    padding: 10px; /* Add padding inside each list item */
+    border: 1px solid #ccc; /* Add a subtle border around each list item */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #ffffff;
+    list-style-type: none;
+}
+
+
